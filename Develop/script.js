@@ -33,7 +33,7 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 function generatePassword() {
-  // Ask the user how long the password would be
+  // Ask the user how big the password will be
   var passwordLength = prompt("How many charactes would you like to have in your password? Choose between 8 to 128");
   var selectedCharacters = [];
   while (passwordLength < 8 || passwordLength > 128) {
@@ -41,7 +41,7 @@ function generatePassword() {
     passwordLength = prompt("How many charactes would you like to have in your password? Choose between 8 to 128");
   };
   
-  // Ask the user if they want any character for their password
+  // Ask the user what character they want for their password
   confirmSpecial = confirm("Would you like special characters?")
   confirmNumbers = confirm("Would you like numbers?")
   confirmLowerCase = confirm("Would you like lowercase?")
